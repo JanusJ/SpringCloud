@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: microservicecloud-consumer
+  
+eureka:
+  instance:
+    prefer-ip-address: true # 注册服务的时候使用服务的ip地址
+  client:
+#    register-with-eureka: false # 不向服务注册中心注册自己
+    service-url: 
+#      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  
