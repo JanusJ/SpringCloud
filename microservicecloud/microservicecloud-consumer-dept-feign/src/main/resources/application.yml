@@ -4,7 +4,11 @@ server:
 spring:
   application:
     name: microservicecloud-consumer
-  
+    
+feign:
+  hystrix:
+    enabled: true
+      
 eureka:
   instance:
     prefer-ip-address: true # 注册服务的时候使用服务的ip地址
